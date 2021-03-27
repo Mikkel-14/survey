@@ -11,12 +11,24 @@ body{
     color: white;
 }
 
+@media (max-width:425px){
+    .arreglo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 426px){
 .arreglo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 60%;
     margin: 0 auto;
+}
 }
 .arreglo div{
     text-align: center;
