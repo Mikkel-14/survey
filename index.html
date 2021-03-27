@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+    <div class="arreglo">
+        <div>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form class="survey">
+            <label for="name" class="row">Name</label>
+            <input type="text" required placeholder="Enter your name" class="row spacing" id="name">
+
+            <label for="email" class="row">Email</label>
+            <input type="text" required placeholder="Enter your e-mail" class="row spacing" id="email">
+
+            <label for="age" class="row">Age(optional)</label>
+            <input type="number" min="10" required placeholder="Age" class="row spacing" id="age">
+
+            <label for="role" class="row">Which option best describes your current role?</label>
+            <select id="role" class="row spacing">
+                <option selected disabled>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+
+            <label class="row">Would you recommend freeCodeCamp to a friend?</label>
+            <label for="definitely" class="row">
+                <input type="radio" name="recommend" checked id="definitely"> Definitely
+            </label>
+            <label for="maybe" class="row">
+                <input type="radio" name="recommend" id="maybe"> Maybe
+            </label>
+            <label for="no" class="row spacing">
+                <input type="radio" name="recommend" id="no"> Not sure
+            </label>
+
+            <label for="feature" class="row">What is your favorite feature of freeCodeCamp?</label>
+            <select id="feature" class="row spacing">
+                <option selected disabled>Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+
+            <label class="row">What would you like to see improved? (Check all that apply)</label>
+            <label for="front" class="row">
+                <input type="checkbox" name="improve" id="front"> Front-end Projects
+            </label>
+            <label for="back" class="row">
+                <input type="checkbox" name="improve"  id="back"> Back-end Projects
+            </label>
+            <label for="dv" class="row">
+                <input type="checkbox" name="improve" id="dv"> Data Visualization
+            </label>
+            <label for="ch" class="row">
+                <input type="checkbox" name="improve" id="ch"> Challenges
+            </label>
+            <label for="os" class="row">
+                <input type="checkbox" name="improve" id="os"> Open Source Community
+            </label>
+            <label for="gitt" class="row">
+                <input type="checkbox" name="improve" id="gitt"> Gitter help rooms
+            </label>
+            <label for="vi" class="row">
+                <input type="checkbox" name="improve" id="vi"> Videos
+            </label>
+            <label for="cm" class="row">
+                <input type="checkbox" name="improve" id="cm"> City Meetups
+            </label>
+            <label for="w" class="row">
+                <input type="checkbox" name="improve" id="w"> Wiki
+            </label>
+            <label for="fo" class="row">
+                <input type="checkbox" name="improve" id="fo"> Forum
+            </label>
+            <label for="ac" class="row spacing">
+                <input type="checkbox" name="improve" id="ac"> Additional Courses
+            </label>
+            <label for="txt" class="row">Any comments or suggestions?</label>
+            <textarea id="txt" class="row spacing" placeholder="Enter your comment here..."></textarea>
+
+            <button type="submit" class="row">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

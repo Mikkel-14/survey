@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+html{
+    background-color: #2f3640;
+    font-family: -apple-system, 'Fira Sans Condensed', sans-serif;
+    /*background: linear-gradient(35deg,#2f3640,#535c68 );*/
+    height: 100%;
+}
+
+body{
+    color: white;
+}
+
+.arreglo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 0 auto;
+}
+.arreglo div{
+    text-align: center;
+}
+
+.survey{
+    padding: 2% 0;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #3d4754;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    width: 92%;
+    margin: 5px 0;
+}
+
+input[type=text], select{
+    padding: 10px;
+    font-family: -apple-system, 'Fira Sans Condensed', sans-serif;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type=text]:focus{
+    border:2px solid #54a0ff;
+}
+
+input[type=number]{
+    padding: 10px;
+    font-family: -apple-system, 'Fira Sans Condensed', sans-serif;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type=number]:focus{
+    border:2px solid #54a0ff;
+}
+.spacing{
+    margin-bottom: 2%;
+}
+
+textarea{
+    padding: 10px;
+    font-family: -apple-system, 'Fira Sans Condensed', sans-serif;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+textarea:focus{
+    border:2px solid #54a0ff;
+}
+
+button{
+    width: 50% !important;
+    background-color: #4fd66d;
+    color:white;
+    font-family: -apple-system, 'Fira Sans Condensed', sans-serif;
+    font-size: large;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+button:hover{
+    animation-name: pintar;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pintar{
+    0%{
+        background-color: #4fd66d;
+    }
+    25%{
+        background-color: #41d362;
+    }
+    75%{
+        background-color: #33d056;
+    }
+    100%{
+        background-color: #2ec44f;
+    }
+}
