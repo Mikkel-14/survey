@@ -10,21 +10,21 @@
 <body>
     <div class="arreglo">
         <div>
-            <h1>freeCodeCamp Survey Form</h1>
-            <p>Thank you for taking the time to help us improve the platform</p>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
         </div>
-        <form class="survey">
-            <label for="name" class="row">Name</label>
+        <form class="survey" id="survey-form">
+            <label for="name" class="row" id="name-label">Name</label>
             <input type="text" required placeholder="Enter your name" class="row spacing" id="name">
 
-            <label for="email" class="row">Email</label>
-            <input type="text" required placeholder="Enter your e-mail" class="row spacing" id="email">
+            <label for="email" class="row" id="email-label">Email</label>
+            <input type="email" required placeholder="Enter your e-mail" class="row spacing" id="email">
 
-            <label for="age" class="row">Age(optional)</label>
-            <input type="number" min="10" required placeholder="Age" class="row spacing" id="age">
+            <label for="number" class="row" id="number-label">Age(optional)</label>
+            <input type="number" min="10" max="99" placeholder="Age" class="row spacing" id="number">
 
-            <label for="role" class="row">Which option best describes your current role?</label>
-            <select id="role" class="row spacing">
+            <label for="dropdown" class="row">Which option best describes your current role?</label>
+            <select id="dropdown" class="row spacing">
                 <option selected disabled>Select current role</option>
                 <option>Student</option>
                 <option>Full Time Job</option>
@@ -35,13 +35,13 @@
 
             <label class="row">Would you recommend freeCodeCamp to a friend?</label>
             <label for="definitely" class="row">
-                <input type="radio" name="recommend" checked id="definitely"> Definitely
+                <input type="radio" name="recommend" checked id="definitely" value="a"> Definitely
             </label>
             <label for="maybe" class="row">
-                <input type="radio" name="recommend" id="maybe"> Maybe
+                <input type="radio" name="recommend" id="maybe" value="b"> Maybe
             </label>
             <label for="no" class="row spacing">
-                <input type="radio" name="recommend" id="no"> Not sure
+                <input type="radio" name="recommend" id="no" value="c"> Not sure
             </label>
 
             <label for="feature" class="row">What is your favorite feature of freeCodeCamp?</label>
@@ -55,42 +55,42 @@
 
             <label class="row">What would you like to see improved? (Check all that apply)</label>
             <label for="front" class="row">
-                <input type="checkbox" name="improve" id="front"> Front-end Projects
+                <input type="checkbox" name="improve" id="front" value="1"> Front-end Projects
             </label>
             <label for="back" class="row">
-                <input type="checkbox" name="improve"  id="back"> Back-end Projects
+                <input type="checkbox" name="improve"  id="back" value="2"> Back-end Projects
             </label>
             <label for="dv" class="row">
-                <input type="checkbox" name="improve" id="dv"> Data Visualization
+                <input type="checkbox" name="improve" id="dv" value="3"> Data Visualization
             </label>
             <label for="ch" class="row">
-                <input type="checkbox" name="improve" id="ch"> Challenges
+                <input type="checkbox" name="improve" id="ch" value="4"> Challenges
             </label>
             <label for="os" class="row">
-                <input type="checkbox" name="improve" id="os"> Open Source Community
+                <input type="checkbox" name="improve" id="os" value="5"> Open Source Community
             </label>
             <label for="gitt" class="row">
-                <input type="checkbox" name="improve" id="gitt"> Gitter help rooms
+                <input type="checkbox" name="improve" id="gitt" value="6"> Gitter help rooms
             </label>
             <label for="vi" class="row">
-                <input type="checkbox" name="improve" id="vi"> Videos
+                <input type="checkbox" name="improve" id="vi" value="7"> Videos
             </label>
             <label for="cm" class="row">
-                <input type="checkbox" name="improve" id="cm"> City Meetups
+                <input type="checkbox" name="improve" id="cm" value="8"> City Meetups
             </label>
             <label for="w" class="row">
-                <input type="checkbox" name="improve" id="w"> Wiki
+                <input type="checkbox" name="improve" id="w" value="9"> Wiki
             </label>
             <label for="fo" class="row">
-                <input type="checkbox" name="improve" id="fo"> Forum
+                <input type="checkbox" name="improve" id="fo" value="10"> Forum
             </label>
             <label for="ac" class="row spacing">
-                <input type="checkbox" name="improve" id="ac"> Additional Courses
+                <input type="checkbox" name="improve" id="ac" value="11"> Additional Courses
             </label>
             <label for="txt" class="row">Any comments or suggestions?</label>
             <textarea id="txt" class="row spacing" placeholder="Enter your comment here..."></textarea>
 
-            <button type="submit" class="row">Submit</button>
+            <button type="submit" class="row" id="submit">Submit</button>
         </form>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
